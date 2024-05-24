@@ -1,6 +1,6 @@
 import unittest
 
-from GameServer import *
+from src.GameServer import *
 
 
 class TestGameServerLatency(unittest.TestCase):
