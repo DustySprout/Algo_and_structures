@@ -1,7 +1,7 @@
 import unittest
 from os import name
 
-from src.FiniteState import *
+from src.finite_state import *
 
 
 class TestFiniteStateSearch(unittest.TestCase):
