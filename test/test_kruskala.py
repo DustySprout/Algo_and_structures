@@ -1,5 +1,5 @@
 import unittest
-from Kryskala import Graph
+from kruskala import Graph
 import csv
 
 
@@ -7,7 +7,7 @@ class TestGraph(unittest.TestCase):
 
     def test_add_edge(self):
         graph = Graph(4)
-        with open('islands.csv', newline='') as csvfile:
+        with open('test.islands.csv', newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for i, row in enumerate(reader):
                 for j, weight in enumerate(row):
@@ -17,7 +17,7 @@ class TestGraph(unittest.TestCase):
 
     def test_find(self):
         graph = Graph(4)
-        with open('islands.csv', newline='') as csvfile:
+        with open('test.islands.csv', newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for i, row in enumerate(reader):
                 for j, weight in enumerate(row):
@@ -28,7 +28,7 @@ class TestGraph(unittest.TestCase):
 
     def test_union(self):
         graph = Graph(4)
-        with open('islands.csv', newline='') as csvfile:
+        with open('test.islands.csv', newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for i, row in enumerate(reader):
                 for j, weight in enumerate(row):
@@ -41,7 +41,7 @@ class TestGraph(unittest.TestCase):
 
     def test_kryskala(self):
         graph = Graph(4)
-        with open('islands.csv', newline='') as csvfile:
+        with open('test.islands.csv', newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for i, row in enumerate(reader):
                 for j, weight in enumerate(row):
