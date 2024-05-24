@@ -1,6 +1,6 @@
 import unittest
 
-from avl_priority_queue import PriorityJobQueue
+from src.avl_priority_queue import PriorityJobQueue
 
 
 class TaskNode:
