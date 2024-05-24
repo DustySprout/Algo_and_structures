@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from src.ZigzagTraversal import zigzag_traversal
+from src.zigzag_traversal import zigzag_traversal
 
 
 class TestZigzagTraversal(unittest.TestCase):
